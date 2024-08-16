@@ -1,4 +1,4 @@
-# Only FRONTEND todo list
+# Only FRONTEND todo list(UGLY)
 
 ## Все записи хранятся до обновления страницы
 
