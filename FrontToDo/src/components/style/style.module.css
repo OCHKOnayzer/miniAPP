@@ -1,0 +1,95 @@
+html,body{ 
+    padding: 0;
+    margin: 0;
+}
+.todoWrapper{ 
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5151c5;
+    position: relative;
+}
+.todoContainer { 
+    height: 80%;
+    width: 33%;
+    border-radius: 12px;
+    background-color: white;
+    position: relative; 
+    z-index: 3;
+    box-shadow: 0 0 20px black;
+    overflow: hidden;
+}
+.modalWindow { 
+    position: absolute;
+    width: 33%;
+    height: 10vh;
+    z-index: 2;
+    background-color: white;
+    border-radius: 5px;
+    transition: top 600ms;
+}
+.modalConteiner{ 
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modalConteiner div{ 
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    padding: 10px;
+    transition: color 400ms;
+}
+.controllerWrapper{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 3;
+    background-color: white;
+}
+.inputTodo{ 
+    outline: none;
+    font-size: 1.5rem;
+    padding: 1rem;
+    font-weight: 600;
+    border: none;
+}
+.storageWrapper{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.itemConteiner{ 
+    display: flex;
+    align-items: center;
+}
+.storageItem{ 
+    display: flex;
+    padding-left: 10px;
+    align-items: center;
+    width: 90%;
+}
+.delBtn,.aproveButton{ 
+    transition: 400ms;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.aproveButton{ 
+    transform: translateY(-5px);
+}
+.delBtn:hover{ 
+    color: rgb(235, 111, 111);
+}
+.aproveButton:hover{ 
+    color: lightgreen;
+}
